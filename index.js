@@ -1,8 +1,13 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const util = require("util");
+
+const generateMarkdown =require('./generateMarkdown')
 
 
-inquirer.prompt([
+
+inquirer. prompt ([
+    
         {
             type: "input",
             name: "projectTitle",
@@ -64,6 +69,20 @@ inquirer.prompt([
         }
     ])
 
-.then((response) =>
-    console.log(response.choices));
+// readme file function
+
+function writeToFile(fileName, data) {
+
+    fs.writeFile(fileName, data, function(err) {
+        console.log(fileName)
+        console.log(data)
+        if (err) {
+            return console.log(err)
+        } else {
+            console.log("success")
+        }
+    })
+
+}
+
 
