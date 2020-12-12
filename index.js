@@ -2,11 +2,10 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
 
-const generateMarkdown =require('./generateMarkdown')
+let generateMarkdown = require('./generateMarkdown');
 
 
-
-inquirer. prompt ([
+const questions = [
     
         {
             type: "input",
@@ -26,12 +25,12 @@ inquirer. prompt ([
         {
             type: "input",
             name: "usage",
-            message: "What is this project usage for?"
+            message: "What is this project usage?"
         },
         {
             type: "list",
             name: "licenses",
-            message: "Chose the appropriate license for this project: ",
+            message: "Chose the license for this project: ",
             choices: [
                 "Apache",
                 "Academic",
@@ -67,7 +66,7 @@ inquirer. prompt ([
             name: "email",
             message: "Please enter your email: "
         }
-    ])
+    ];
 
 // readme file function
 
@@ -85,4 +84,17 @@ function writeToFile(fileName, data) {
 
 }
 
+// function to start program
+function init() {
+    inquirer.prompt(questions)
+        .then(function(data) {
+            writeToFile("README.md", generateMarkdown(data));
+            
+            console.log(data)
+
+        })
+
+}
+
+init();
 

@@ -1,7 +1,6 @@
-function generateMarkdown(data) {
-    return `
+
   
-    # ${data.projectTitle}
+    # dkdd
     
     # Table of Content
     -[description](#description)
@@ -13,33 +12,30 @@ function generateMarkdown(data) {
     -[username](#username)
     -[profile](#profile)
     
-    ${data.username}
+    kdkd
     ##username:
     
-        ${data.description}
+        kdkdk
     ##description:
     
-        ${data.installation}
+        kdkd
     ##installation:
     
-        ${data.usage}
+        kdkd
     ##usage:
     
-        ${data.licenses}
+        MIT
     ##licenses:
     
-        ${data.contribution}
+        kdkkd
     ##contribution:
     
-        ${data.test}
+        kdkd
     ##test:
     
-        ${data.email}
+        kdkdk
     ##email:
     
-        ${data.questions}
+        kdkkd
     ##profile:
-    `;
-    }
     
-    module.exports = generateMarkdown;
