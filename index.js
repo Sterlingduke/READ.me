@@ -44,14 +44,13 @@ const questions = [
         },
         {
             type: "checkbox",
-            name: "licenses",
+            name: "license",
             message: "Chose the license for this project: ",
             choices: [
-                "Apache",
-                "Academic",
-                "GNU",
-                "ISC",
                 "MIT",
+                "Apache",
+                "GNU",
+                "BSD",
                 "Mozilla",
                 "Open"
             ]
@@ -84,6 +83,7 @@ const questions = [
         }
     ];
 
+
 // readme file function
 
 function writeToFile(fileName, data) {
@@ -94,7 +94,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err)
         } else {
-            console.log("success")
+            console.log("Wow! you kinda did a README.md")
         }
     })
 
@@ -114,3 +114,17 @@ function init() {
 
 init();
 
+// 
+    // const Badge = (licenses) => {
+    //     if (license === "MIT") {
+    //       return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    //     } else if (license === "Apache") {
+    //       return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+    //     } else if (license === "GNU") {
+    //       return `[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)`
+    //     }else if (license === "BSD") {return `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
+    //     }else if (license === "Mozilla") {return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+    //     }else {
+    //       return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
+    //     }
+    //   };
