@@ -1,9 +1,9 @@
 function generateMarkdown(data) {
     return `
   
-    # ${data.projectTitle}
+    ##${data.projectTitle}
     
-    # Table of Content
+    ##Table of Content
     -[description](#description)
     -[installation](#installation)
     -[usage](#usage)
@@ -12,33 +12,37 @@ function generateMarkdown(data) {
     -[test](#test)
     -[username](#username)
     -[profile](#profile)
-    
-    ${data.username}
-    ##username:
-    
+
+
+     ##username:
+        ${data.username}
+  
+     ##description:
         ${data.description}
-    ##description:
-    
+     ##technology
+        ${data.technology}
+   
+     ##installation:
         ${data.installation}
-    ##installation:
-    
+   
+     ##usage:
         ${data.usage}
-    ##usage:
-    
+ 
+     ##licenses:
         ${data.licenses}
-    ##licenses:
-    
+  
+     ##contribution:
         ${data.contribution}
-    ##contribution:
-    
+   
+     ##test:
         ${data.test}
-    ##test:
-    
+   
+     ##email:
         ${data.email}
-    ##email:
     
+     ##profile:
         ${data.questions}
-    ##profile:
+    
     `;
     }
     

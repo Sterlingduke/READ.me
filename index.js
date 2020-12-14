@@ -17,6 +17,21 @@ const questions = [
             name: "description",
             message: "Write a brief description of your project: "
         },
+        {   
+            type: "checkbox",
+            name: "technology",
+            message: "Chose the technology used for this project: ",
+            choices: [
+                "HTML",
+                "CSS",
+                "JAVASCRIPT",
+                "NODE.js",
+                "PYTHON",
+                "RUBY",
+                "Open"
+            ]
+        },
+
         {
             type: "input",
             name: "installation",
@@ -28,7 +43,7 @@ const questions = [
             message: "What is this project usage?"
         },
         {
-            type: "list",
+            type: "checkbox",
             name: "licenses",
             message: "Chose the license for this project: ",
             choices: [
@@ -41,6 +56,7 @@ const questions = [
                 "Open"
             ]
         },
+        
         {
             type: "input",
             name: "contribution",
