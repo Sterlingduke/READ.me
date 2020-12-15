@@ -1,8 +1,9 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
+const generateMarkdown = require('./utils/generateMarkdown');
 
-let generateMarkdown = require('./generateMarkdown');
+// let generateMarkdown = require('./util/generateMarkdown');
 
 
 const questions = [
@@ -88,7 +89,7 @@ const questions = [
 
 function writeToFile(fileName, data) {
 
-    fs.writeFile(fileName, data, function(err) {
+    fs.writeFileSync(fileName, data, function(err) {
         console.log(fileName)
         console.log(data)
         if (err) {
