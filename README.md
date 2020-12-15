@@ -1,45 +1,45 @@
 
   
-    ## dd
+## README Generator Pro Max 3000
     
-    ## Table of Content
-    -[description](#description)
-    -[installation](#installation)
-    -[usage](#usage)
-    -[licenses](#licenses)
-    -[contribution](#contribution)
-    -[test](#test)
-    -[username](#username)
-    -[profile](#profile)
+## Table of Content
+    *[description](#description)
+    *[installation](#installation)
+    *[usage](#usage)
+    *[licenses](#licenses)
+    *[contribution](#contribution)
+    *[test](#test)
+    *[username](#username)
+    *[profile](#profile)
 
 
-     ## Username:
-        df
+## Username:
+        sterling
   
-     ## Description:
-        ddf
-     ## Technology
-        HTML,CSS,JAVASCRIPT,NODE.js,PYTHON,RUBY,Open
+## Description:
+        This project is a README.md generator, you will be given prompts to answer in return give you a perfectly eligible README.md. 
+## Technology
+        JAVASCRIPT,NODE.js,Open
    
-     ## Installation:
-        af
+## Installation:
+        all you need is to run node index.js
    
-     ## Usage:
-        ad
+## Usage:
+        
  
-     ## Licenses:
+## Licenses:
         [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
   
-     ## Contribution:
-        fd
+## Contribution:
+        Me, Google, Brennan, Daniel.
    
-     ## Test:
-        df
+## Test:
+        no
    
-     ## Email:
-        df
+## Email:
+        sterlingcduke@gmail.com
     
-     ## Profile:
-        df
+## Profile:
+        run test
    
     
